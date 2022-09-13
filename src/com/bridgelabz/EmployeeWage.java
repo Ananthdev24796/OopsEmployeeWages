@@ -10,13 +10,25 @@ package com.bridgelabz;
  */
 public class EmployeeWage {
 
-		final int WagesPerHours = 20;
-		final int totalWorkingHrs = 8;
-		int partTimeWorkingHrs = 4;
-		int totalWrkDays =20;
-		final int maxWorkHrs = 100;
+//		final int WagesPerHours = 20;
+//		final int totalWorkingHrs = 8;
+//		int partTimeWorkingHrs = 4;
+//		int totalWrkDays =20;
+//		final int maxWorkHrs = 100;
+
+	
+	public int  company1(int WagesPerHours,int totalWorkingHrs,int totalWrkDays, int maxWorkHrs) {
 		
-	public int  computeEmployeeWage() {
+		computeEmployeeWage( WagesPerHours, totalWorkingHrs, totalWrkDays,  maxWorkHrs);
+		return 0;
+	}
+	public int  company2(int WagesPerHours,int totalWorkingHrs,int totalWrkDays, int maxWorkHrs) {
+		computeEmployeeWage( WagesPerHours, totalWorkingHrs, totalWrkDays,  maxWorkHrs);
+		return 0;
+		
+	}
+		
+	public int  computeEmployeeWage(int WagesPerHours,int totalWorkingHrs,int totalWrkDays, int maxWorkHrs) {
 		
 		int dailyWages = 0;
 		int totalWages=0;
@@ -56,13 +68,17 @@ public class EmployeeWage {
 		
 		return totalEmployeeWage;
 	}
-			
+
 	
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		EmployeeWage objEmp = new EmployeeWage();
-		objEmp.computeEmployeeWage();
+//		objEmp.computeEmployeeWage(20,8,10,10);
+		objEmp.company1(18, 8, 10, 10);
+		objEmp.company1(20, 8, 20, 100);
+		
+	
 
 	}
 
